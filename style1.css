@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&diplay=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.navbar{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.navlist{
+    display: flex;
+    gap: 3rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+.left-container,.right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left-container{
+    background-color:#262525 ;
+    width: 70%;
+    padding-left: 3rem;
+
+}
+.right-container{
+    background: linear-gradient(-45deg, #3877FF,#262525 70%);
+    width: 30%;
+
+}
+.icons .fa-brands{
+    color: #bbb;
+    font-size: 1.5rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+.content{
+    margin-left: 3rem;
+    
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.content .intro span{
+    color: #5DB9EE;
+}
+.content h5{
+    font-size: 2rem;
+    color: #5DB9EE;
+    
+
+}
+.content .detail{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+    padding-right: 30%;
+}
+.btn-container button{
+    border:.1rem solid #5DB9EE;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    background: transparent;
+    color: #5DB9EE;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff #3877FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:#5DB9EE;
+    padding-top: 50%;
+}
+.design .rectangle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 20%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+
+}
+.rectangle:nth-child(1){
+    background:linear-gradient(90deg,transparent,#262525 50%);
+    width: 5rem;
+}
+.rectangle:nth-child(2){
+    width: 15rem;
+    background-image: url("profile.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow:
+    0 0 1rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877FF,
+    inset 0 0 2rem #3877FF,
+    0 0 4rem #3877FF,
+    inset 0 0 4rem #3877FF
+
+    ;
+
+}
+.navlist li a::after, .navlist .active::after{
+    content:"" ;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin:bottom left ;
+}
+/* ---Skills Section--- */
+.section{
+    background: #3877FF; 
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+}
+.skill-level{
+    background: #fff;
+    width: 100%;
+    height: .7rem;
+    margin-top: .7rem;
+    border-radius: 3rem;
+    position: relative;
+
+}
+.skill-container{
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:6rem;
+    grid-row-gap:2rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-bar{
+    background: #5DB9EE;
+    position: absolute;
+    inset:0;
+    border-radius: 3rem;
+
+}
+.html{
+    width: 85%;
+}
+.bootstrap{
+    width: 65%;
+}
+.c{
+    width:75% ;
+}
+.cpp{
+    width:80% ;
+}
+.javascript{
+    width:60% ;
+}
+.css{
+    width: 70%;
+}
+footer {
+    background-color:#3877FF;
+    color: #262525;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info p i {
+    margin-right: 10px;
+    color: #bbb;
+}
+
+.social-links a {
+    color: #bbb;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #bbb;
+}
